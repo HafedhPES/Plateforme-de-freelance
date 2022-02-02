@@ -1,5 +1,6 @@
 import WebIcon from '@mui/icons-material/Web';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 export default function homeProject() {
   return <div className="projectContainer">
@@ -12,6 +13,10 @@ export default function homeProject() {
    <div className="projectContentHeader">
    <span className="projectTitle"> <h5>Création site web pour une asbl </h5> </span>
    <span className="projectDate"> Déposé le 31/01/22 19:41 </span>
+  <div className="projectUpdate">
+   <MoreVertIcon />
+   </div>
+
    </div>
    <div className="projectContentStatus">
    <ToggleOnIcon color="success"/>
@@ -28,6 +33,9 @@ export default function homeProject() {
   <div className="projectTag"> Création de site internet</div> 
   <div className="projectTag"> Création de site internet</div> 
   <div className="projectTag"> Création de site internet</div> 
+   </div>
+   <div  className="projectButton">
+   <button className="postulerButton"> Postuler </button>
    </div>
   </div>
 </div>
