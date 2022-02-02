@@ -35,7 +35,7 @@ export default function homeProject() {
   <div className="projectTag"> Création de site internet</div> 
    </div>
    <div  className="projectButton">
-   <button className="postulerButton"> Postuler </button>
+   <button className="postulerButton"> partager</button>
    </div>
   </div>
 </div>
