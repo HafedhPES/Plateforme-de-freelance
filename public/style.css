@@ -315,3 +315,88 @@ margin-bottom: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
+/* css de la page details projet */
+.dproject{
+    flex:7.5;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dprojectTop{
+    display: flex;
+    flex-direction: column;
+    background-color: #2169ec;
+    padding: 20px 80px;
+    color: white;
+    padding-bottom: 100px;
+    
+     
+}
+.dprojectTopTitle{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.dprojectTopfooter{
+    display: flex;
+    margin-top: 10px;
+    justify-self: space-between ;
+}
+.statusText,.offers{
+    margin: auto 5px;
+}
+.dprojectCenter{
+    background-color: white;
+    margin:0 80px;
+    font-size: 1.1em;
+    padding:25px;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+    top:-70px;
+    
+    
+}
+.projectTable{
+    position: relative;
+    top:-70px;
+    margin:0 79px;
+    margin-top: 1px;
+}
+.dptab{
+   
+    width: 100%;
+    font-size: 1.2em;
+}
+.dptaptd1{
+    background-color:#f1f2f3 ;
+    padding-left: 10px;
+    font-weight: 300;
+    color:#2169ec;
+    
+
+}
+.dptaptd2{
+    background-color:white ;
+    padding: 12px 10px;
+    font-weight: 600;  
+}
+.projectProfile{
+position: relative;
+background-color: white;
+margin:1px 80px;
+top: -70px;
+padding:30px 25px  25px 25px;
+display: flex;
+flex-direction: column;
+border-radius: 0 0 15px 15px;
+}
+.profileText{
+    font-weight: 600;
+    font-size: 1.25em;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
