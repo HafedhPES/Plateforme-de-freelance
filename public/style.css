@@ -348,7 +348,8 @@ margin-bottom: 5px;
 }
 .dprojectCenter{
     background-color: white;
-    margin:0 80px;
+    margin-left:80px;
+    margin-right: 20px;
     font-size: 1.1em;
     padding:25px;
     border-radius: 15px 15px 0 0;
@@ -360,7 +361,7 @@ margin-bottom: 5px;
 .projectTable{
     position: relative;
     top:-70px;
-    margin:0 79px;
+    margin:0px 20px 0 80px;
     margin-top: 1px;
 }
 .dptab{
@@ -372,7 +373,7 @@ margin-bottom: 5px;
     background-color:#f1f2f3 ;
     padding-left: 10px;
     font-weight: 600;
-    color:#b05f6d;
+    color:#47b39d;
     
 
 }
@@ -384,7 +385,8 @@ margin-bottom: 5px;
 .projectProfile{
 position: relative;
 background-color: white;
-margin:1px 80px;
+margin-left: 80px;
+margin-right: 20px;
 top: -70px;
 padding:30px 25px  25px 25px;
 display: flex;
@@ -410,7 +412,7 @@ border-radius: 0 0 15px 15px;
 .offersWrapper{
     position: relative;
     top: -70px;
-    margin: 20px 80px;
+    margin: 20px 20px 80px 80px;
     display: flex;
     flex-direction: column;
 }
@@ -418,7 +420,7 @@ border-radius: 0 0 15px 15px;
     font-size: 1.25em;
     font-weight: 600;
     padding-left: 10px;
-    color:#b05f6d;
+    color:#47b39d;
 }
 .offersmContainer{
     background-color: white;
@@ -430,7 +432,7 @@ border-radius: 0 0 15px 15px;
     margin-bottom: 10px;
 }
 .offersmImg{
-    flex:0.8;
+    flex:1;
     display:flex;
     align-items: center;
 }
@@ -438,6 +440,7 @@ border-radius: 0 0 15px 15px;
     flex:10;
     display:flex;
     flex-direction:column;
+    
 }
 .offersmDetails{
     flex:3;
@@ -495,4 +498,60 @@ font-weight: 300;
     border-radius: 15%;
     object-fit: cover;
     cursor:pointer;
+}
+.dprojectContent{
+    display:flex;
+}
+.dprojectLeftContent{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+.dprojectMainContent{
+    flex:3
+}
+.card1Img{
+    height: 150px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.card1{
+    margin-right: 10px;
+}
+.card1Header{
+    position:relative;
+    top:-70px;
+}
+.card1Body{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    top:-80px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+    
+}
+.card1Title{
+    color:#47b39d;
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.card1Text{
+    font-size: 1.2em;
+    color:black;
+    padding-bottom: 10px;
+}
+
+.card1Button{
+    border:none;
+    padding: 7px;
+    background-color: #47b39d;
+    color:white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    
 }

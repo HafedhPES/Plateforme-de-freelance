@@ -32,6 +32,9 @@ export default function projectContent() {
 
      
   </div>
+  <div className="dprojectContent">
+  <div className="dprojectMainContent">
+ 
   <div className="dprojectCenter">
   Bonjour,
 Je suis en train de créer mon projet de micro-crèche. J'ai donc besoin de réaliser le logo de mon entreprise.
@@ -80,9 +83,28 @@ Deborah
 < OfferSm/>
 
 
-
+</div>
+</div>
+<div className="dprojectLeftContent">
+  <div className="card1">
+<div className="card1Header">
+<img src="/assets/template/postoffer.jpg" alt="Photo de profil" className="card1Img" />
+</div>
+<div className="card1Body">
+<span className="card1Title">
+  Pas Trop Tard !
+</span>
+<span className='card1Text'>
+Le client étudie encore ses offres. on te conseille de les consulter afin de présnter l'offre la plus pertinente 
+</span>
+<div className="card1ButtonDiv">
+  <button className="card1Button"> Postuler</button>
+</div>
+</div>
 </div>
 
+</div>
+</div>
   </div>)
   ;
 }
