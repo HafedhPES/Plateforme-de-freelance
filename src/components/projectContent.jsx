@@ -1,7 +1,13 @@
 
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import Offer from '@mui/icons-material/DynamicFeed';
-import { SpaceBarOutlined } from '@mui/icons-material';
+import OfferSm from './offerSm';
+
+
+
+
+
+
 export default function projectContent() {
   return (
     <div className='dproject'> 
@@ -10,9 +16,17 @@ export default function projectContent() {
    Création d'un logo pour une création d'une micro-creche
    </span>
    <div className="dprojectTopfooter">
+
         <ToggleOnIcon color="success"/>
+       
+        
         <span className="statusText">Ouvert</span>
-        <Offer color="secondary"/>
+        
+
+
+
+        
+        <Offer color="info"/>
         <span className="offers">21 Offres </span>
    </div>
 
@@ -53,6 +67,21 @@ Deborah
 </div>
 </div>
 
+<div className="offersWrapper">
+<span className="offersTitle">
+  Les offres: 
+</span>
+< OfferSm/>
+< OfferSm/>
+< OfferSm/>
+< OfferSm/>
+< OfferSm/>
+< OfferSm/>
+< OfferSm/>
+
+
+
+</div>
 
   </div>)
   ;

@@ -327,7 +327,7 @@ margin-bottom: 5px;
 .dprojectTop{
     display: flex;
     flex-direction: column;
-    background-color: #2169ec;
+    background-color: #b05f6d;
     padding: 20px 80px;
     color: white;
     padding-bottom: 100px;
@@ -371,8 +371,8 @@ margin-bottom: 5px;
 .dptaptd1{
     background-color:#f1f2f3 ;
     padding-left: 10px;
-    font-weight: 300;
-    color:#2169ec;
+    font-weight: 600;
+    color:#b05f6d;
     
 
 }
@@ -399,4 +399,100 @@ border-radius: 0 0 15px 15px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+}
+.profileTag{
+    background-color: #47B39d;
+    border-radius: 20px;
+    color:white;
+    margin-right: 5px;
+    padding: 2px 5px;
+}
+.offersWrapper{
+    position: relative;
+    top: -70px;
+    margin: 20px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.offersTitle{
+    font-size: 1.25em;
+    font-weight: 600;
+    padding-left: 10px;
+    color:#b05f6d;
+}
+.offersmContainer{
+    background-color: white;
+    padding:5px 10px;
+    display: flex;
+    margin-top: 20px;
+    border-radius: 15px;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.offersmImg{
+    flex:0.8;
+    display:flex;
+    align-items: center;
+}
+.offersmBody{
+    flex:10;
+    display:flex;
+    flex-direction:column;
+}
+.offersmDetails{
+    flex:3;
+    display: flex;
+    align-items: center;
+    
+}
+.offersmOwner{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.offersOwnerCity{
+    display: flex;
+    font-size: 1em;
+    margin-top: 5px;
+    
+}
+.city{margin-left: 5px;
+font-weight: 300;
+
+}
+.offersmContent{
+    display: flex;
+   justify-content: center;
+    
+}
+.offersmHeader{
+    margin-bottom: 10px;
+    font-size: 0.8em;
+   
+}
+.iconText{
+    
+    margin-right: 5px;
+}
+.separatorDiv{
+    margin-right: 10px;
+}
+.offersmEval{
+    display: flex;
+}
+.star{
+    background-color: #ffc153;
+    border-radius: 2px;
+    font-size: 10px;
+    padding: 0 2px;
+    margin-right: 2px;
+}
+.evalCount{
+    font-size:10px ;
+}
+.offersmOwnerImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+    object-fit: cover;
+    cursor:pointer;
 }
