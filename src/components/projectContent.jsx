@@ -103,6 +103,12 @@ Le client étudie encore ses offres. on te conseille de les consulter afin de pr
 </div>
 </div>
 
+<div className="container third flex-col mt10 mr10 aic jcc deposerCard">
+  <span className='clr5 sz2 fw600 '>Déposér Gratuitement votre projet </span>
+  <button className="btnsm clr5 secondary mt10 "> Ajouter </button>
+  
+</div>
+
 </div>
 </div>
   </div>)

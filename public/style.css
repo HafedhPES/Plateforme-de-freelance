@@ -2,6 +2,162 @@
     font-family: 'Roboto', sans-serif;
     
 }
+ .flex-row{
+     display:flex;
+     flex-wrap: wrap;
+ }
+ .flex-col{
+     display:flex;
+     flex-direction: column; 
+ }
+ .aic{
+     align-items: center;
+ }
+ .jcc{
+     justify-content: center;
+ }
+ .clr1{
+     color:#eb6b56;
+ }
+ .clr2{
+    color:#b05f6d;
+}
+.clr3{
+    color:#47b39d;
+}
+.clr4{
+    color:#ffc153;
+}
+.clr5{
+    color:white;
+}
+.sz1{
+    font-size: 0.8em;
+}
+.sz2{
+    font-size: 1em;
+}
+.sz3{
+    font-size: 1.2em;
+}
+.fw600{
+    font-weight: 600;
+}
+ .ut1{
+     flex:1;
+ }
+ .ut2{
+    flex:2;
+}
+.ut3{
+    flex:3;
+}
+.ut4{
+    flex:4;
+}
+.ut5{
+    flex:5;
+}
+.ut6{
+    flex:6;
+}
+.ut7{
+    flex:7;
+}
+.ut8{
+    flex:8;
+}
+.ut9{
+    flex:9;
+}
+.ut10{
+    flex:10;
+}
+.ut11{
+    flex:11;
+}
+ .mr5{margin-right: 5px;
+}
+.mr10{margin-right: 10px;
+}
+.mr15{margin-right: 15px;
+}
+.mr20{margin-right: 20px;
+}
+.ml5{
+    margin-left: 5px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt15{
+    margin-top: 15px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb5{
+margin-bottom: 5px;
+}
+.mb5{
+margin-bottom: 5px;
+}
+.mb10{
+margin-bottom: 10px;
+    }
+.mb15{
+margin-bottom: 15px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+    }
+.container{
+    padding:20px;
+    background-color: white;
+    border-radius: 12px;
+}
+.primary{
+    background-color: #eb6b56;
+}
+.secondary{
+    background-color: #b05f6d;
+}
+.third{
+    background-color: #47b39d;
+}
+.forth{
+    background-color: #ffc153; 
+}
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor:pointer;
+}
+.avatar2{
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+
+
 /* Top bar css  */
 .topbarContainer{
     display:flex;
@@ -554,4 +710,15 @@ font-weight: 300;
     border-radius: 5px;
     cursor: pointer;
     
+}
+.btnsm{
+    border:none;
+    padding: 7px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;   
+}
+.deposerCard{
+    position:relative;
+    top:-65px;
 }
