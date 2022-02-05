@@ -16,6 +16,9 @@
  .jcc{
      justify-content: center;
  }
+ .jfe{
+     justify-content: flex-end;
+ }
  .clr1{
      color:#eb6b56;
  }
@@ -30,6 +33,9 @@
 }
 .clr5{
     color:white;
+}
+.clr6{
+    color:black;
 }
 .sz1{
     font-size: 0.8em;
@@ -141,6 +147,9 @@ margin-bottom: 15px;
 .forth{
     background-color: #ffc153; 
 }
+.fifth{
+    background-color: white; 
+}
 .avatar{
     width: 40px;
     height: 40px;
@@ -154,6 +163,17 @@ margin-bottom: 15px;
     border-radius: 30%;
     object-fit: cover;
     cursor:pointer;
+}
+.avatar3{
+    border-radius: 20%;
+    width:7em;
+    height:8em;
+    object-fit: cover;
+    box-shadow: 5px white;
+    border: solid 2px white;
+    position: relative;
+    left:5%;
+    top:-15%;
 }
 
 
@@ -645,6 +665,13 @@ font-weight: 300;
     padding: 0 2px;
     margin-right: 2px;
 }
+.bigStar{
+    
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 0 2px;
+    margin-right: 2px;
+}
 .evalCount{
     font-size:10px ;
 }
@@ -722,3 +749,33 @@ font-weight: 300;
     position:relative;
     top:-65px;
 }
+/*Page Profil */
+.profileLogin{
+    
+  position:relative;
+  top:-7%;
+  left:5%;
+  font-size: 1.2em;
+  color:black;
+
+}
+.profileAct{
+    
+    position:relative;
+    top:-7%;
+    left:5%;
+  }
+  .evalBprofile{ 
+    position:relative;
+    top:10%;
+    left:6%;
+
+  }
+  .tag{
+    
+        
+        border-radius: 20px;
+        padding:2px 8px;
+        margin-right: 5px;
+        background-color: tomato;
+  }
