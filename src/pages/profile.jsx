@@ -5,7 +5,7 @@ export default function project() {
   return (
  <>
  <TopBar/>
- <div className="homeContainer">
+ <div className="homeContainer flex-col">
  
  
  <ProfileContent/>

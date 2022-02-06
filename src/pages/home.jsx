@@ -7,7 +7,7 @@ export default function home() {
   return (
  <>
  <TopBar/>
- <div className="homeContainer">
+ <div className="homeContainer flex-row">
  <SideBar/>
  <MainContent/>
  <RightBar/>
