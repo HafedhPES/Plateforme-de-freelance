@@ -1,11 +1,11 @@
-
+import {Link } from "react-router-dom";
 import Search from '@mui/icons-material/Search';
 import Notif from '@mui/icons-material/NotificationsNone';
 //import Search from '@mui/icons-material/SearchOutlined';
 export default function topbar() {
   return (<div className="topbarContainer">
     <div className="topbarLeft">
-      <span className="logo">FreeLanci.tn</span>
+     <Link to="/"> <span className="logo">FreeLanci.tn</span></Link>
     </div>
     <div className="topbarCenter">
       <div className="searchBar">
