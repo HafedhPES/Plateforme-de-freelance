@@ -1,0 +1,97 @@
+.registerContainer{
+    flex:18;
+    width:100%;
+    display: flex; 
+    color:black  
+}
+.mainRegister{
+flex:7;
+
+display: flex;
+flex-direction: column;
+background-color: white ;
+
+}
+.rightRegister{
+flex:3;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    padding:2% 15%;
+    flex:14
+}
+.stepsContainer{
+    flex:0.5;
+    display: flex;
+    padding: 2% 10%;
+    
+    
+}
+
+
+.selectContainer{
+    position: relative;
+}
+select{
+    
+    border: #47b39d solid 1px;
+    padding:10px;
+    outline:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width:100%;
+    font-size: 1.3rem;
+}
+.registerSelect:focus,.registerInput:focus{
+    border: #eb6b56 solid 1px;
+}
+.rowselect{
+    
+    position: absolute;
+    top:0;
+    right:0;
+   
+        pointer-events: none;
+        background-color: #47b39d;
+        height: 100%;
+        width: 2rem;
+        display: block;
+    
+}
+
+
+
+.rowselect::before{
+  
+    content:"";
+    position:absolute;
+    border-left: 0.5em solid transparent;
+    border-right: 0.5em solid transparent;
+    border-top: 0.5em solid white;
+    top:1.3em;
+    right:25%;  
+}
+
+  select option {
+    color:black;
+    height: 90px;
+    
+}
+  select option[value="0"] {
+      color:grey;
+     
+      
+  }
+.registerInput{
+    width:100%;
+   
+    border: #47b39d solid 1px;
+    padding:10px;
+    outline:none;
+    font-size: 1.3rem;
+}
+  
+  
+  

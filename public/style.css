@@ -199,9 +199,10 @@ margin-bottom: 15px;
 
 /* Top bar css  */
 .topbarContainer{
+    flex:1;
     display:flex;
     background-color: #eb6b56;
-    height:10vh;
+    
     color:white;
     justify-content:center;
     align-items: center;
@@ -301,6 +302,21 @@ margin-bottom: 15px;
     font-weight: 400;
     color:#535556;
     line-height: 1.5
+}
+
+.allContainer{
+    
+    width:100%;
+    background-color: #f4f6f8;
+    min-height: 100vh;
+    
+    font-size: 1rem;
+    font-weight: 400;
+    color:#535556;
+    line-height: 1.5;
+    display:flex;
+    flex-direction: column;
+    
 }
 /* sidebar css */
 .sideBar{
