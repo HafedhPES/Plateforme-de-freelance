@@ -14,6 +14,10 @@ background-color: white ;
 }
 .rightRegister{
 flex:3;
+display:flex;
+flex-direction:column;
+background-color: #462446;
+padding: 20px 30px;
 }
 .formContainer{
     display: flex;
@@ -94,4 +98,4 @@ select{
 }
   
   
-  
+ 

@@ -1,4 +1,5 @@
 import TopBar from "../../components/topbar";
+import RightRegister from '../../components/register/rightRegister'
 import ArrowSteps from "../../components/arrowSteps/ArrowSteps";
 import "./register.css";
 import {useState} from "react";
@@ -56,7 +57,15 @@ console.log(user.type);
 <div className="flex-col mb10">
     <label className="mb10">Mot de passe *</label>
     <div className="flex-row">
-    <input type= "texte" className="registerInput" />
+    <input type= "password" className="registerInput" />
+    
+    </div>
+    
+</div>
+<div className="flex-col mb10">
+    <label className="mb10">Confirmer mot de passe *</label>
+    <div className="flex-row">
+    <input type= "password" className="registerInput" />
     
     </div>
     
@@ -68,7 +77,7 @@ console.log(user.type);
 </div>
 </div>
 <div className="rightRegister">
-    la
+    <RightRegister/>
 </div>
 
 </div>

@@ -19,7 +19,7 @@ export default function ArrowSteps(){
   <li className="future">
     <span>
       <strong>Etape 3</strong>
-      Blah blah blah.
+      Connexion
     </span><i></i>
   </li>
 </ul>
