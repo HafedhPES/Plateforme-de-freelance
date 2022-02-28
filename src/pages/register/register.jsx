@@ -1,5 +1,8 @@
 import TopBar from "../../components/topbar";
 import RightRegister from '../../components/register/rightRegister'
+import StepOne from '../../components/register/stepOne'
+import StepZero from '../../components/register/stepZero'
+import StepTwo from '../../components/register/stepTwo'
 import ArrowSteps from "../../components/arrowSteps/ArrowSteps";
 import "./register.css";
 import {useState} from "react";
@@ -9,8 +12,30 @@ export default function Register(){
     const [user,setUser]= useState({
         type:""
     });
-console.log(user.type);
-    
+
+ const [step,setStep]=useState(0);
+ const [maxSteps,setMaxSteps]=useState(0);
+ const handlTypeChange=(e)=>{
+     e.target.value=='client'? setMaxSteps(1):setMaxSteps(2);
+     setUser({...user,type:e.target.value})
+
+ }
+const renderButton=()=>{
+
+if (step<maxSteps){
+    return (
+        <input className="postulerButton" type="button" onClick={()=>{setStep(step+1)}} value="Suivant"/>
+    )}
+    else if (step==maxSteps){
+        return (
+            <input type="button" className="postulerButton"  value="S'inscrire"/>
+        )
+    }
+    else{
+        return undefined;
+    }
+    }
+
     return(
 <>
 
@@ -18,61 +43,25 @@ console.log(user.type);
 <TopBar/>
 <div className="registerContainer">
 <div className="mainRegister">
-    <div className="stepsContainer">
-    <ArrowSteps />
-       
-    </div>
+    
     <div className="formContainer">
 <h3  className="mb10">Créer un compte gratuitement</h3>
 <form>
-<div className="flex-col mb10">
-    <label className="mb10">Vous êtes *</label>
-    <div className="selectContainer">
-    <select className="registerSelect" onChange={(e)=>setUser({...user,type:e.target.value})}>
-        <option value="">Choisissez un type...</option>
-        <option value="client">Je suis un client: j'ai un projet faire réalise</option>
-        <option value="freelanceur">Je suis un freelanceur: je cherche des projets à réaliser</option>
-    </select>
-    <span class="rowselect"></span>
-    </div>
-    
-</div>
-{user.type&& (<>
-<div className="flex-col mb10 ">
-    <label className="mb10">Email *</label>
-    <div class="flex-row">
-    <input type= "texte" className="registerInput"/>
-    
-    </div>
-    
-</div>
-<div className="flex-col mb10">
-    <label className="mb10">Pseudo *</label>
-    <div className="flex-row">
-    <input type= "texte" className="registerInput"/>
-    
-    </div>
-    
-</div>
-<div className="flex-col mb10">
-    <label className="mb10">Mot de passe *</label>
-    <div className="flex-row">
-    <input type= "password" className="registerInput" />
-    
-    </div>
-    
-</div>
-<div className="flex-col mb10">
-    <label className="mb10">Confirmer mot de passe *</label>
-    <div className="flex-row">
-    <input type= "password" className="registerInput" />
-    
-    </div>
-    
-</div>
-</>
+{step==0&&(
+<StepZero user={user} handlTypeChange={handlTypeChange} />
 )}
-
+{step==1&&(
+<StepOne/>
+)}
+{step==2&&(
+<StepTwo/>
+)}
+<div className="flex-row jcc">
+    {
+        user.type&&
+    renderButton()
+    }   
+</div>
 </form>
 </div>
 </div>
