@@ -1,20 +1,13 @@
-import React from 'react'
+import Input from "../form/Input"
+import Select from "../form/Select"
+
 
 export default function stepTwo() {
   return (
     <section>
-<div className="flex-col mb10">
-    <label className="mb10">Photo de profil </label>
-    <div className="flex-row">
-    <input type= "upload" className="registerInput" />
-    
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Secteur d'activitée *</label>
-    <div className="selectContainer">
-    <select className="registerSelect">
+<Input label="Photo de profil"  className="registerInput" />  
+
+    <Select label="Secteur d'activité" className="registerSelect">
         <option value="">Choisissez un secteur...</option>
         <option value="client">Développeur web Fullstcak</option>
         <option value="client">Développeur web Frontend</option>
@@ -24,35 +17,11 @@ export default function stepTwo() {
         <option value="client">Statiticien</option>
         <option value="client">Agent bureautique</option>
         <option value="client">Digital Marketting</option>
-    </select>
-    <span class="rowselect"></span>
-    </div>
+    </Select>
     
-</div>
-<div className="flex-col mb10">
-    <label className="mb10">Présentation *</label>
-    <div className="flex-row">
-    <textarea className="registerInput" />
     
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Formation *</label>
-    <div className="flex-row">
-    <input type="text" className="registerInput" />
-    
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Mots clés *</label>
-    <div className="flex-row">
-    <input type="text" className="registerInput" />
-    
-    </div>
-    
-</div> 
+<Input type="textarea" label="Présentation *" className="registerInput"/>
+<Input label="Formation"  className="registerInput" />
 </section>
   )
 }

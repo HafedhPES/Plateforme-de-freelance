@@ -37,7 +37,7 @@ padding: 20px 30px;
 .selectContainer{
     position: relative;
 }
-select{
+.registerSelect{
     
     border: #47b39d solid 1px;
     padding:10px;

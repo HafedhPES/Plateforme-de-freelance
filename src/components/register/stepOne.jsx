@@ -1,39 +1,15 @@
-import React from 'react'
+import Input from "../form/Input"
+import Select from "../form/Select"
 
 export default function stepOne() {
   return (
     <section>
-<div className="flex-col mb10">
-    <label className="mb10">Nom *</label>
-    <div className="flex-row">
-    <input type= "text" className="registerInput" />
-    
-    </div>
-    
-</div> 
+<Input label="Nom: *" className="registerInput" />
 
-    
+<Input label="Prénom: *" className="registerInput" />   
+<Input label="Tel: *" className="registerInput" />  
 
-<div className="flex-col mb10">
-    <label className="mb10">Prénom *</label>
-    <div className="flex-row">
-    <input type="text" className="registerInput" />
-    
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Tel </label>
-    <div className="flex-row">
-    <input type="text" className="registerInput" />
-    
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Gouvernorat *</label>
-    <div className="selectContainer">
-    <select className="registerSelect">
+ <Select className="registerSelect">
         <option value="">Sélectionner un gouvernorat</option>
         <option value="client">Nabeul</option>
         <option value="client">Tunis</option>
@@ -56,15 +32,8 @@ export default function stepOne() {
         <option value="client">Tozeur</option>
         <option value="client">Siliana</option>
         <option value="client">Kasserine</option>
-    </select>
-    <span class="rowselect"></span>
-    </div>
-    
-</div> 
-<div className="flex-col mb10">
-    <label className="mb10">Ville *</label>
-    <input type="text" className="registerInput" />
-    </div>
+    </Select>
+    <Input label="Ville: *" className="registerInput" />  
     
 </section>
   )
