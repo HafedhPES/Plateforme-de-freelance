@@ -15,8 +15,8 @@ export default function Input({
 <label className="mb10">{label}</label>
     <div className="flex-row">
     {type=="textarea"? 
-         <textarea className={className} />:
-    <input type= {type} className={className} />
+         <textarea placeholder={placeholder} className={className} />:
+    <input type= {type} className={className} placeholder={placeholder} />
     }
     </div>
     </div>

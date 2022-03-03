@@ -1,0 +1,72 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100
+  }
+
+  .modal-main {
+    
+    position:fixed;
+    background: white;
+    width: 50%;
+    height: 50%;
+    top:40%;
+    left:50%;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  .titre{
+      text-align:center;
+      padding-top: 5%;
+  }
+  .content{
+      padding: 15px 15px ;
+  }
+  .next{
+      display: flex;
+      padding: 15px 15px ;
+  }
+  .modal-step{
+flex:3;
+align-self: center;
+  }
+  .modal-button{
+flex:1;
+border:none;
+outline:none;
+background-color: #eb6b56;
+padding:15px 10px;
+border-radius: 40px;
+color:white;
+font-weight: 600;
+font-size: 1.3rem;
+cursor: pointer;
+  }
+  .barre{
+      display: flex;
+     border-radius: 10px;
+     
+      
+   
+  }
+  .done{
+    
+    background-color: #47b39d;
+    border-radius: 10px 0 0 0;
+    min-height: 10px;
+
+}
+.undone{
+    background-color: rgb(194, 190, 190);
+    border-radius:  0 10px 0 0 ;
+    min-height: 10px;
+   
+
+}
+  
