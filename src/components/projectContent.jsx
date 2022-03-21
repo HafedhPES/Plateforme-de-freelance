@@ -3,15 +3,18 @@ import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import Offer from '@mui/icons-material/DynamicFeed';
 import OfferSm from './offerSm';
 import ProjectRightBar from './projectRightBar'
+import PostModal from './postModal/postModal';
 
 
 
 
 
 
-export default function projectContent() {
+export default function projectContent({postuler,setPostuler}) {
   return (
+    
     <div className='dproject'> 
+    {postuler && <PostModal setPostuler={setPostuler}/>}
   <div className="dprojectTop">
    <span className="dprojectTopTitle">
    Création d'un logo pour une création d'une micro-creche
@@ -87,7 +90,7 @@ Deborah
 </div>
 
 </div>
-<ProjectRightBar />
+<ProjectRightBar postuler={postuler} setPostuler={setPostuler} />
 </div>
   </div>)
   ;

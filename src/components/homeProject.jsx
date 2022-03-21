@@ -2,7 +2,7 @@ import WebIcon from '@mui/icons-material/Web';
 import ToggleOnIcon from '@mui/icons-material/ToggleOn';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-export default function homeProject() {
+export default function homeProject({setPostuler}) {
   return <div className="projectContainer">
   <div className="projectIcon">
      <div className="projectIconContainer">
@@ -35,7 +35,7 @@ export default function homeProject() {
   <div className="projectTag"> Création de site internet</div> 
    </div>
    <div  className="projectButton">
-   <button className="postulerButton"> Postuler</button>
+   <button onClick={()=>setPostuler(true)} className="postulerButton"> Postuler</button>
    </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 
 
-export default function projectRightBar() {
+export default function projectRightBar({postuler,setPostuler}) {
   return (
 <div className="dprojectLeftContent">
   <div className="card1">
@@ -15,7 +15,7 @@ export default function projectRightBar() {
 Le client étudie encore ses offres. on te conseille de les consulter afin de présnter l'offre la plus pertinente 
 </span>
 <div className="card1ButtonDiv">
-  <button className="card1Button"> Postuler</button>
+  <button onClick={()=>setPostuler(true)} className="card1Button"> Postuler</button>
 </div>
 </div>
 </div>
