@@ -267,6 +267,7 @@ margin-bottom: 15px;
 }
 .topbarIcons{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -276,6 +277,7 @@ margin-bottom: 15px;
    
     
 }
+
 .badgeNotif{
     position: absolute;
     width:15px;

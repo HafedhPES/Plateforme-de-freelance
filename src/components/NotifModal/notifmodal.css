@@ -1,0 +1,36 @@
+.notif-modal{
+    background-color: white;
+    
+    width:20%;
+    position: absolute;
+    z-index: 100;
+    top:98%;
+    min-height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    right:1%;
+}
+.title{
+    text-align: center;
+    color:black;
+    padding:5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.notification{
+    display: flex;
+    flex-direction: column;
+    padding:5px 15px;
+}
+.notif-content{
+    color:black;
+    cursor: pointer;
+    flex:3;
+    
+}
+.notif-ago{
+    color: blue;
+    flex:0,5;
+    font-size: 13px;
+}

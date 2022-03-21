@@ -1,9 +1,13 @@
 import {Link } from "react-router-dom";
 import Search from '@mui/icons-material/Search';
 import Notif from '@mui/icons-material/NotificationsNone';
+import NotifModal from "./NotifModal/NotifModal";
+import { useState } from "react";
 //import Search from '@mui/icons-material/SearchOutlined';
-export default function topbar() {
+export default function Topbar() {
+  const [showNotif,setShowNotif]=useState(false);
   return (<div className="topbarContainer">
+    
     <div className="topbarLeft">
      <Link to="/"> <span className="logo">FreeLanci.tn</span></Link>
     </div>
@@ -19,10 +23,15 @@ export default function topbar() {
        <span className="topbarLink">Contact</span>
      </div>
      <div className="topbarIcons">
-       <div className="topbarIcon">
+       <div className="topbarIcon" onClick={()=>setShowNotif(!showNotif)}>
          <Notif/>
          <span className="badgeNotif">1</span>
+         
        </div>
+       <div className="notifmodal">
+       {showNotif &&<NotifModal/>}
+       </div>
+       
      </div>
      <img src="/assets/person/1.jpeg" alt="Photo de profil" className="topbarImg" />
     </div>
