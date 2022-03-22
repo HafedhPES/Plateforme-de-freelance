@@ -2,9 +2,10 @@ import {Link } from "react-router-dom";
 import Search from '@mui/icons-material/Search';
 import Notif from '@mui/icons-material/NotificationsNone';
 import NotifModal from "./NotifModal/NotifModal";
+import LogoutModal from "./logoutModal/LogoutModal"
 import { useState } from "react";
 //import Search from '@mui/icons-material/SearchOutlined';
-export default function Topbar() {
+export default function Topbar({logout,setLogout}) {
   const [showNotif,setShowNotif]=useState(false);
   return (<div className="topbarContainer">
     
@@ -33,7 +34,8 @@ export default function Topbar() {
        </div>
        
      </div>
-     <img src="/assets/person/1.jpeg" alt="Photo de profil" className="topbarImg" />
+     <img onClick={()=>setLogout(!logout)} src="/assets/person/1.jpeg" alt="Photo de profil" className="topbarImg" />
+     {logout&& <LogoutModal/>}
     </div>
      
   </div>);

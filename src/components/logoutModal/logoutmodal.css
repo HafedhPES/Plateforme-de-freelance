@@ -1,0 +1,55 @@
+.logout-modal{
+    background-color: white;
+    
+    width:17%;
+    position: absolute;
+    z-index: 99;
+    top:98%;
+    min-height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    right:1%;
+}
+.logout-pseudo{
+    text-align: center;
+    color:white;
+    padding:5px;
+    font-size: 1.2rem;
+    background-color: #47b39d;
+    border-radius: 5px;
+    margin: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.logout-menu{
+    display: flex;
+    flex-direction: column;
+    color: grey;
+}
+.logout-menu-item{
+    display:flex;
+    align-items: center;
+    margin-top: 5px;
+    
+
+}
+.item-text{
+    color: #535556;
+   
+}
+.logout-button{
+   
+    border:none;
+    outline:none;
+    background-color: #b05f6d;
+    padding:7px 4px;
+    border-radius: 40px;
+    color:white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px 20px;
+    text-align: center;
+    
+      }

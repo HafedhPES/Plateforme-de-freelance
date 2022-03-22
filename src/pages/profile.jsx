@@ -1,11 +1,11 @@
 import ProfileContent from "../components/profileContent"
 import TopBar from "../components/topbar"
 
-export default function project() {
+export default function Profile({logout,setLogout}) {
   return (
  <>
- <TopBar/>
- <div className="homeContainer flex-col">
+ <TopBar logout={logout} setLogout={setLogout}/>
+ <div onClick={()=>setLogout(false)} className="homeContainer flex-col">
  
  
  <ProfileContent/>

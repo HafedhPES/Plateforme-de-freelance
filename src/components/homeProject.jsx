@@ -35,7 +35,7 @@ export default function homeProject({setPostuler}) {
   <div className="projectTag"> Création de site internet</div> 
    </div>
    <div  className="projectButton">
-   <button onClick={()=>setPostuler(true)} className="postulerButton"> Postuler</button>
+   <button onClick={()=>(true)} className="postulerButton"> Postuler</button>
    </div>
   </div>
 </div>
